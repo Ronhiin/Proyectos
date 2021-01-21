@@ -1,0 +1,63 @@
+html {
+    margin: 0 3em;
+    background-color: ghostwhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.datosempresa,
+.fecha,
+.datoscliente,
+.importe {
+    border-style: solid;
+    padding: 1em;
+    margin: 0 0.5em;
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+.enviar {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.enviar input {
+    width: 500px;
+    height: 40px;
+    border-radius: 6px;
+    border-width: 4px;
+    background-color: ghostwhite;
+    font-size: large;
+}
+
+.enviar input:hover {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 0;
+    text-decoration: underline;
+    color: darkslategray;
+}
+
+label {
+    font-weight: bold;
+    color: darkslategray;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 5px;
+}

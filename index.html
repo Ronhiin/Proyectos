@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 class="title">GENERADOR DE FACTURAS</h1>
+    <form action="factura.php" method="post">
+        <div class="container">
+            <div class="datosempresa">
+                <h2>DATOS DE LA EMPRESA</h2>
+                <label for="nempresa">Nombre Empresa:</label><br>
+                <input type="text" id="nempresa" name="nempresa" required><br>
+                <label for="nie">NIE/NIF:</label><br>
+                <input type="text" id="nie" name="nie" required><br>
+                <label for="domicilioempresa">Domicilio:</label><br>
+                <input type="text" id="domicilioempresa" name="domicilioempresa" required><br>
+                <label for="codpost">Cod Postal:</label><br>
+                <input type="number" id="codpost" name="codpost" required><br>
+                <label for="poblacion">Poblacion:</label><br>
+                <input type="text" id="poblacion" name="poblacion" required><br>
+                <label for="provinciaempresa">Provincia:</label><br>
+                <input type="text" id="provinciaempresa" name="provinciaempresa" required><br>
+            </div>
+            <div class="fecha">
+                <h2>FECHA Y Nº</h2>
+                <label for="fechafactura">Fecha:</label><br>
+                <input type="date" id="fechafactura" name="fechafactura" required><br>
+                <label for="numerofactura">Nº Factura:</label><br>
+                <input type="text" id="numerofactura" name="numerofactura" required><br>
+            </div>
+            <div class="datoscliente">
+                <h2>DATOS DEL CLIENTE</h2>
+                <label for="razonsocial">Razon Social:</label><br>
+                <input type="text" id="razonsocial" name="razonsocial" required><br>
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion" required><br>
+                <label for="poblacioncliente">Población:</label><br>
+                <input type="text" id="poblacioncliente" name="poblacioncliente" required><br>
+                <label for="cif">CIF:</label><br>
+                <input type="text" id="cif" name="cif" required><br>
+                <label for="provincia">Provincia:</label><br>
+                <input type="text" id="provincia" name="provincia" required><br>
+            </div>
+            <div class="importe">
+                <h2>IMPORTE</h2>
+                <label for="concepto">Concepto:</label><br>
+                <textarea id="concepto" name="concepto" value=""></textarea><br>
+                <label for="vehiculo">Vehículo:</label><br>
+                <input type="number" id="vehiculo" name="vehiculo" required><br>
+                <label for="matricula">Matricula:</label><br>
+                <input type="text" id="matricula" name="matricula" value=""><br>
+                <label for="importe">Importe Eur.:</label><br>
+                <input type="number" id="importe" name="importe" required><br>
+            </div>
+        </div>
+        <div class="enviar">
+            <input type="submit" id="enviar" name="enviar">
+        </div>
+    </form>
+
+</body>
+
+</html>
